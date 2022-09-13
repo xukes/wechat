@@ -1,3 +1,36 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+
+    ext {
+        compileSdkVersion = 28
+        buildToolsVersion = "27.0.3"
+        minSdkVersion = 23
+        targetSdkVersion = 28
+        supportLibVersion = "27.+"
+    }
+
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://jitpack.io' //增加 jitPack Maven 仓库
+        }
+        maven{
+            allowInsecureProtocol=true
+            url'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+    }
+}
+
+
+
 include ':ninegridview'
 include ':app', ':LibZxing'
 include ':imagewatcher'
