@@ -90,4 +90,5 @@
     <color name="color_grey_cccccc">#f7f7f7</color>
     <color name="common_divider">#dfdfdd</color>
     <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
 </resources>
